@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>秘密結社 五淫</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TOP SECRET">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 画面全体をうっすら覆う背景グリッド -->
+  <div class="bg-grid"></div>
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">
+        <img src="assets/goin-logo.png" alt="秘密結社五淫ロゴ">
+      </div>
+      <div class="brand-text">
+        <span class="brand-name-ja">秘密結社 五淫</span>
+        <span class="brand-name-en">goin</span>
+      </div>
+    </div>
+
+    <button class="nav-toggle" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#summon">招集</a></li>
+        <li><a href="#doctrine">五つの淫</a></li>
+        <li><a href="#rituals">儀式</a></li>
+        <li><a href="#contact">接触</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ヒーローセクション -->
+    <section id="summon" class="hero">
+      <div class="hero-inner">
+        <div class="hero-logo-circle">
+          <img src="assets/goin-logo.png" alt="秘密結社五淫ロゴ">
+        </div>
+        <p class="hero-subtitle">淫の世界の情報屋</p>
+        <h1 class="hero-title">秘密結社 五淫</h1>
+        <p class="hero-copy">
+          淫へと飛び込む者。<br>
+          この先はその者のみが立ち入れる。
+        </p>
+        <a href="#doctrine" class="hero-cta">輪の内側へ進む</a>
+      </div>
+    </section>
+
+    <!-- 五つの淫（コンセプト） -->
+    <section id="doctrine" class="section section-doctrine">
+      <h2 class="section-title">五つの淫</h2>
+      <p class="section-lead">
+        「五淫」とは、堕落ではなく歪曲された秩序の名である。<br>
+        それぞれはひとつの頂点であり、同時に円環の一点でもある。
+      </p>
+
+      <div class="pent-grid">
+        <article class="doctrine-card">
+          <h3 class="doctrine-title">第一淫・静謀</h3>
+          <p class="doctrine-body">
+            音なき策謀。言葉よりも構造を信じる者のための位階。
+          </p>
+        </article>
+        <article class="doctrine-card">
+          <h3 class="doctrine-title">第二淫・幽観</h3>
+          <p class="doctrine-body">
+            視えぬものを見積もり、影の輪郭を測る視座。
+          </p>
+        </article>
+        <article class="doctrine-card">
+          <h3 class="doctrine-title">第三淫・密演</h3>
+          <p class="doctrine-body">
+            表に出ない動作と、記録されない振る舞いのための舞台。
+          </p>
+        </article>
+        <article class="doctrine-card">
+          <h3 class="doctrine-title">第四淫・深律</h3>
+          <p class="doctrine-body">
+            破られるための規則ではなく、沈むための規則。
+          </p>
+        </article>
+        <article class="doctrine-card">
+          <h3 class="doctrine-title">第五淫・還環</h3>
+          <p class="doctrine-body">
+            すべてを円へと戻し、中心をあえて空洞のままに残す技法。
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 儀式（活動紹介） -->
+    <section id="rituals" class="section section-rituals">
+      <h2 class="section-title">儀式記録</h2>
+      <p class="section-lead">
+        公開可能な範囲でのみ、断片的な記録を残している。<br>
+        すべてを理解する必要はない。輪郭だけで十分だ。
+      </p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <span class="timeline-tag">非公開領域</span>
+            <h3 class="timeline-title">零度会合</h3>
+            <p class="timeline-text">
+              初めて円が描かれた日。言葉は交わされず、座標のみが共有された。
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <span class="timeline-tag">観測済</span>
+            <h3 class="timeline-title">螺旋照会</h3>
+            <p class="timeline-text">
+              関係なき者の行動パターンを重ね合わせ、偶然に見える必然を抽出する儀。
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <span class="timeline-tag">継続中</span>
+            <h3 class="timeline-title">匿名共鳴</h3>
+            <p class="timeline-text">
+              名を呼ばないまま、互いの存在だけを微かに揺らし合う実験。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 接触（コンタクトフォーム風・実際はJSで疑似送信） -->
+    <section id="contact" class="section section-contact">
+      <h2 class="section-title">接触要求</h2>
+      <p class="section-lead">
+        完全な身元を明かす必要はない。<br>
+        ただし、あなたの「ズレ」の方向だけは、正確に記してほしい。
+      </p>
+
+      <form id="contact-form" class="contact-form" autocomplete="off">
+        <label class="field">
+          <span class="field-label">仮名</span>
+          <input type="text" name="alias" placeholder="例：第五環の観測者">
+        </label>
+
+        <label class="field">
+          <span class="field-label">連絡用の痕跡</span>
+          <input type="email" name="trace" placeholder="メールアドレス or 連絡可能な識別子">
+        </label>
+
+        <label class="field">
+          <span class="field-label">あなたの「ズレ」</span>
+          <textarea name="deviation" rows="4" placeholder="常識から、どの方向に、どれくらいズレている？"></textarea>
+        </label>
+
+        <button type="submit" class="btn-submit">送信せずに、痕跡だけ残す</button>
+        <p class="form-note">※ このフォームは、実際にはどこへも送信されない。</p>
+        <p id="form-message" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-copy">© 秘密結社 五淫 - goin. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
