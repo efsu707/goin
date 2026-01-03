@@ -45,3 +45,44 @@ if (form && formMessage) {
     }, 4000);
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const SECRET_KEY = "6709";
+
+  const heroCTA = document.querySelector(".hero-cta");
+  const modal = document.getElementById("gate-modal");
+  const input = document.getElementById("gate-input");
+  const submit = document.getElementById("gate-submit");
+  const errorMsg = document.getElementById("gate-error");
+
+  const lockedSections = document.querySelectorAll(
+    "#doctrine, #rituals, #contact, .site-footer"
+  );
+
+  // 初期非表示
+  lockedSections.forEach(sec => sec.style.display = "none");
+
+  // ボタン押したらモーダル表示
+  heroCTA.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.classList.add("show");
+  });
+
+  // 開門
+  submit.addEventListener("click", () => {
+    if (input.value === SECRET_KEY) {
+      modal.classList.remove("show");
+
+      lockedSections.forEach(sec => {
+        sec.style.display = "block";
+        sec.style.opacity = 0;
+        setTimeout(() => {
+          sec.style.transition = "opacity 0.6s ease";
+          sec.style.opacity = 1;
+        }, 10);
+      });
+    } else {
+      errorMsg.textContent = "あなたを監視しています。";
+    }
+  });
+});
